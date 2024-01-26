@@ -5,25 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pokedex 2.0</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
     <main class="main">
-        <header class="header-home">
+        <header class="header home">
             <div class="container">
                 <div class="logo-wrapper">
-                    <img src="assets/pokeball.svg" alt="pokeball">
+                    <img src="assets/img/pokeball.svg" alt="pokeball">
                     <h1>Pokedex</h1>
                 </div>
                 <div class="search-wrapper">
                     <div class="search-wrap">
-                        <img src="assets/search.svg" alt="search icon" class="search-icon">
+                        <img src="assets/img/search.svg" alt="search icon" class="search-icon">
                         <input type="text" class="search-input body3-fonts" placeholder="Search" id="search-input">
-                        <img src="assets/cross.svg" alt="cross-icon" class="search-close-icon" id="search-close-icon">
+                        <img src="assets/img/cross.svg" alt="cross-icon" class="search-close-icon" id="search-close-icon">
                     </div>
                     <div class="sort-wrapper">
                         <div class="sort-wrap">
-                            <img src="assets/sorting.svg" alt="sorting" class="sort-icon" id="sort-icon">
+                            <img src="assets/img/sorting.svg" alt="sorting" class="sort-icon" id="sort-icon">
                         </div>
                         <div class="filter-wrapper">
                             <p class="body2-fonts">Sort by:</p>
@@ -46,9 +47,11 @@
             <div class="container">
                 <div class="list-wrapper"></div>
             </div>
-            <div class="not-found-message">Pokemon not found</div>
+            <div class="not-found-message" id="not-found-message">Pokemon not found</div>
         </section>
     </main>
     <script src="src/pokemon.js"></script>
+    <script src="src/search.js"></script>
 </body>
+
 </html>
